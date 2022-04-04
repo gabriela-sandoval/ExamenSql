@@ -1,0 +1,37 @@
+﻿<UserControl x:Class="ExamenSql.UserControlView.Dashboard"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:ExamenSql.UserControlView"
+             mc:Ignorable="d" 
+             d:DesignHeight="120" d:DesignWidth="1220">
+    <Grid>
+        <Grid HorizontalAlignment="Left" Height="120" Margin="5,0,-5,0" VerticalAlignment="Top" Width="1220"/>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="120" Margin="38,-1,0,0" VerticalAlignment="Top" Width="260" CornerRadius="15" Background="#FFCA337C">
+            <TextBox x:Name="TextBoxTotalRegistrosFacturacion" HorizontalAlignment="Left" Height="25" Margin="150.667,80.667,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="55" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF010A13" FontFamily="Berlin Sans FB" FontSize="20" IsUndoEnabled="False" IsEnabled="False"/>
+        </Border>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="120" Margin="330,-1,0,0" VerticalAlignment="Top" Width="260" CornerRadius="15" Background="#FF784CA4">
+            <TextBox x:Name="TextBoxTotalRegistrosVendedores" HorizontalAlignment="Left" Height="25" Margin="150.667,80.667,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="55" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF010A13" FontFamily="Berlin Sans FB" FontSize="20" IsUndoEnabled="False" IsEnabled="False"/>
+        </Border>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="120" Margin="622,-1,0,0" VerticalAlignment="Top" Width="260" CornerRadius="15" Background="#FF006F12">
+            <TextBox x:Name="TextBoxTotalRegistrosClientes" HorizontalAlignment="Left" Height="25" Margin="150.667,80.667,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="55" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF010A13" FontFamily="Berlin Sans FB" FontSize="20" IsUndoEnabled="False" IsEnabled="False"/>
+        </Border>
+        <Border BorderThickness="1" HorizontalAlignment="Left" Height="120" Margin="916,-1,0,0" VerticalAlignment="Top" Width="260" CornerRadius="15" Background="#FF0463AD">
+            <TextBox x:Name="TextBoxTotalRegistrosArticulos" HorizontalAlignment="Left" Height="25" Margin="150.667,80.667,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="55" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF010A13" FontFamily="Berlin Sans FB" FontSize="20" IsUndoEnabled="False" IsEnabled="False"/>
+        </Border>
+        <Image Margin="63,16,1112,47" Source="/ExamenSql;component/Recursos/iconoFacturas.png"/>
+        <Label Content="FACTURACIÓN" HorizontalAlignment="Left" Margin="108,26,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB Demi" FontSize="24" Foreground="White" Background="{x:Null}"/>
+        <Label Content="Total de registros: " HorizontalAlignment="Left" Margin="73,78,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="14" Foreground="White" Background="{x:Null}"/>
+        <Image Margin="355,16,820,47" Source="/ExamenSql;component/Recursos/iconoVendedores.png"/>
+        <Label Content="VENDEDORES" HorizontalAlignment="Left" Margin="400,26,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB Demi" FontSize="24" Foreground="White" Background="{x:Null}"/>
+        <Label Content="Total de registros: " HorizontalAlignment="Left" Margin="365,78,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="14" Foreground="White" Background="{x:Null}"/>
+        <Image Margin="650,16,525,47" Source="/ExamenSql;component/Recursos/iconoClientes.png"/>
+        <Label Content="CLIENTES" HorizontalAlignment="Left" Margin="695,26,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB Demi" FontSize="24" Foreground="White" Background="{x:Null}"/>
+        <Label Content="Total de registros: " HorizontalAlignment="Left" Margin="660,78,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="14" Foreground="White" Background="{x:Null}"/>
+        <Image Margin="941,16,234,47" Source="/ExamenSql;component/Recursos/iconoArticulos.png"/>
+        <Label Content="ARTÍCULOS" HorizontalAlignment="Left" Margin="986,26,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB Demi" FontSize="24" Foreground="White" Background="{x:Null}"/>
+        <Label Content="Total de registros: " HorizontalAlignment="Left" Margin="951,78,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="14" Foreground="White" Background="{x:Null}"/>
+
+    </Grid>
+</UserControl>

@@ -1,0 +1,37 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ExamenSql"
+        xmlns:UserControlView="clr-namespace:ExamenSql.UserControlView" x:Class="ExamenSql.VendedoresView"
+        mc:Ignorable="d"
+        Title="Vendedores" Height="658" Width="1290" MinWidth="1290" MinHeight="658" HorizontalAlignment="Center" VerticalAlignment="Center" Icon="Recursos/iconoFactura.png" SizeToContent="WidthAndHeight" WindowStartupLocation="CenterScreen" WindowState="Maximized">
+    <Grid>
+
+        <Rectangle HorizontalAlignment="Left" Height="630" Margin="0,0,-1.667,-1.333" StrokeThickness="5" StrokeLineJoin="Round" VerticalAlignment="Top" Width="1285" Fill="#FF010A13"/>
+        <Label Content="VENDEDORES" HorizontalAlignment="Left" Margin="125,18,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB Demi" FontSize="24" Foreground="White" Background="{x:Null}"/>
+        <Image Margin="89,24,1162.332,577.667" Source="Recursos/iconoVendedores.png" Width="32" Height="27"/>
+        <DataGrid x:Name="dtg_VendedoresMismoEstado" HorizontalAlignment="Left" Margin="111,285,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}"  AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False" Foreground="#FF010A13" Background="{x:Null}" HorizontalContentAlignment="Center" FontFamily="Berlin Sans FB" FontSize="14" ColumnWidth="Auto" CanUserResizeColumns="False" AutomationProperties.IsColumnHeader="True" HorizontalGridLinesBrush="White" VerticalGridLinesBrush="White" SelectionUnit="Cell" RowBackground="#FF010A13" VerticalContentAlignment="Center">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id Vendedor" Binding="{Binding IdVendedor}" Foreground="White"/>
+                <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" IsReadOnly="True" Foreground="White"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="4. Vendedores que siempre venden a clientes de su mismo estado" HorizontalAlignment="Left" Margin="104,230,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="16" Foreground="White" Background="{x:Null}" Width="550" VerticalContentAlignment="Center"/>
+        <UserControlView:Menu HorizontalAlignment="Left" Margin="0,1,0,-2.333" VerticalAlignment="Top">
+            <UserControlView:Menu.Effect>
+                <DropShadowEffect Color="#FF234956" Opacity="0.5" ShadowDepth="7"/>
+            </UserControlView:Menu.Effect>
+        </UserControlView:Menu>
+        <DataGrid x:Name="dtg_VendedoresImporteFacturadoSuperaMedia" HorizontalAlignment="Left" Margin="707,285,0,0" VerticalAlignment="Top" BorderBrush="{x:Null}"  AutoGenerateColumns="False" CanUserAddRows="False" CanUserDeleteRows="False" CanUserResizeRows="False" Foreground="#FF010A13" Background="{x:Null}" HorizontalContentAlignment="Center" FontFamily="Berlin Sans FB" FontSize="14" ColumnWidth="Auto" CanUserResizeColumns="False" AutomationProperties.IsColumnHeader="True" HorizontalGridLinesBrush="White" VerticalGridLinesBrush="White" SelectionUnit="Cell" RowBackground="#FF010A13" VerticalContentAlignment="Center">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Id Vendedor" Binding="{Binding IdVendedor}" Foreground="White"/>
+                <DataGridTextColumn Header="Nombre" Binding="{Binding Nombre}" IsReadOnly="True" Foreground="White"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="6. Vendedores cuyo importe facturado durante el año pasado supera en un &#xD;&#xA;10% a la media de facturación de los vendedores en dicho año." HorizontalAlignment="Left" Margin="700,230,0,0" VerticalAlignment="Top" FontFamily="Berlin Sans FB" FontSize="16" Foreground="White" Background="{x:Null}" Width="550" VerticalContentAlignment="Center"/>
+        <UserControlView:Dashboard HorizontalAlignment="Left" Margin="70,65,-0.001,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
